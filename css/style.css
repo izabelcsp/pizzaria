@@ -221,3 +221,244 @@ div.pizza-opcoes{
     margin: 5px 0;
 }
 
+section#testemunha{
+    width: 100%;
+    background-image: linear-gradient(
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,1)),
+     url(../img/secao11-background-secao-depoimento.png);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#testemunha-mestre{
+    width: 100%;
+    height: 300px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+div#testemunha-esquerda, div#testemunha-direita{
+    width: 15%;
+    height: 300px;
+    cursor:pointer ;
+}
+
+div#testemunha-mestre ion-icon{
+    width: 90%;
+    height: 90%;
+    color: #F03733;
+}
+
+div#testemunha-esquerda ion-icon{
+    opacity:0.5;
+}
+
+div#testemunha-centro{
+    width: 70%;
+    margin: 0 auto;
+    height: 300px;
+    position: relative;
+    max-width: 1010px;
+    overflow: hidden;
+  
+}
+
+div#testemunhos{
+    position: absolute;
+    left: 0;
+    width: 2680px;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul{
+    display: inline-table;
+    /* inline-block mesma coisa inline-table */
+    width: 300px;
+    background: #FFF;
+    padding: 30px;
+    margin: 50px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul li {
+    list-style:none;
+    display:inline-table;
+    width:90%;
+    margin: 0;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul h5{
+    font-size: 140%;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul p{
+    line-height: 1.5;
+    color: #404040;
+    font-size: 90%;
+}
+
+section#testemunha div#testemunha-centro div#testemunhos ul img{
+    width: 40%;
+    border-radius: 100%;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    border:5px solid #F03733;
+}
+
+
+/* SECAO -TRANSICAO 1  */
+
+div#transicao-testemunha-plano{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+div#transicao-testemunha-plano div#decoracao1{
+    width: 30%;
+    height: 100%;
+    background-image: url(../img/secao13-tomate-manjericao-alho.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
+div#transicao-testemunha-plano div#decoracao2{
+    width: 30%;
+    height: 100%;
+    background-image: url(../img/secao13-azeite.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+div#transicao-testemunha-plano div#decoracao3{
+    width: 30%;
+    height: 100%;
+    background-image: url(../img/secao13-detalhe-tomate.jpg);
+    background-repeat: no-repeat;
+    background-position:bottom right;
+    
+}
+
+
+/* secao-planos */
+
+
+section#plano-principal{
+    width: 100%;
+    height: 800px;
+}
+
+div#planos-janela{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.planos{
+    width: 250px;
+    height: 450px;
+    margin: 80px 30px;
+}
+
+div.planos-top{
+    width: 100%;
+    height: 350px;
+    background-color: #f7f7f7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+div.planos-bottom{
+    width: 100%;
+    height: 100px;
+    background-color: #078c31;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 3px #ccc;
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+div#transicao-plano-rodape{
+    width: 100%;
+    height: 36px;
+    background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5)), url(../img/secao15-mesa-xadrez-clara.png);
+    background-repeat: repeat-x;
+    margin-top: 100px;
+}
+
+footer{
+    padding-top: 36px;
+    padding-left: 36px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/secao15-mesa-xadrez.png);
+    background-repeat: repeat;
+    border-bottom: 10px solid #f03733;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer div#mapa {
+    width: 35%;
+    height: 390px;
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 3px 10px #404040;
+}
+
+footer div#info{
+    width: 30%;
+    height: 390px;
+    background-color: #f03733;
+    box-shadow: 0 3px 10px #404040;
+}
+
+footer div#redes-sociais{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    /*flex-flow:row wrap = kdefine que os elementos serão organizados em linha e que quebrarão de linha quando não estiverem cabendo na tela */
+    flex-flow: row wrap;
+    /*justify-content: space-evenly = aplica um espaçamento entre os elementos filho pegando o espaço que resta no pai e aplizando uma média entre os elementos*/
+    justify-content: space-evenly;
+}
+
+footer div#redes-sociais ion-icon{
+    color: #FFF;
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+}
+
+footer div#redes-sociais ion-icon:hover{
+    color: #f2b705;
+}
+
+footer div#pizza-rodape-decoracao{
+    width: 300px;
+    height: 390px;
+    margin-top: -100px;
+    background-image: url(../img/secao15-pizza-rodape.png);
+    background-repeat: no-repeat;
+}
